@@ -9,94 +9,115 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <img logo>
-      <ul>
-        <li>ИНФОРМАЦИЯ</li>
-        <li>ФОТО И ВИДЕО</li>
-        <li>КАРТА ШТАТА</li>
-        <li>ГОСТИНИЦЫ</li>
+  <header class="main-header">
+    <nav class="main-header__main-navigation">
+      <ul class="main-header__b-navigation-list b-navigation-list">
+        <li class="b-navigation-list__item"><a class="b-navigation-list__link"><img logo class="b-navigation-list__img-logo"></a></li>
+        <li class="b-navigation-list__item"><a href="#" class="b-navigation-list__link">ИНФОРМАЦИЯ</a></li>
+        <li class="b-navigation-list__item"><a href="#" class="b-navigation-list__link">ФОТО И ВИДЕО</a></li>
+        <li class="b-navigation-list__item"><a href="#" class="b-navigation-list__link">КАРТА ШТАТА</a></li>
+        <li class="b-navigation-list__item"><a href="hotels.html" class="b-navigation-list__link">ГОСТИНИЦЫ</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <img promo>
-    <h1>СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h1>
+  <main class="main-content container">
+    <img class="main-content__promo-image">
+    <h1 class="main-content__title">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h1>
 
-    <div>
-      <h2>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
-      <section>
-        <div>
-        <h1>НАСТОЯЩИЙ ГОРОДОК</h1>
-        <p>— №1 —</p>
-        <p>СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+    <div class="main-content__feautures main-feautures">
+      <h2 class="main-feautures__title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+      <section class="feauture-with-image">
+        <div class="b-feauture b-feauture_theme_blue b-feauture_left">
+        <h1 class="b-feauture__title">НАСТОЯЩИЙ ГОРОДОК</h1>
+        <p class="b-feauture__number">— №1 —</p>
+        <p class="b-feauture__description">СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div>
-        <img>
+        <img class="feauture-with-image__image feauture-with-image__image_right">
       </section>
-      <section>
-        <div>
-          <h1>ТАМ ЕСТЬ Мост дьявола</h1>
-          <p>— №2 —</p>
-          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+      <section class="feauture-with-image">
+        <div class="b-feauture b-feauture_theme_blue b-feauture_right">
+          <h1 class="b-feauture-block__title">ТАМ ЕСТЬ Мост дьявола</h1>
+          <p class="b-feauture-block__number">— №2 —</p>
+          <p class="b-feauture-block__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
-        <img>
+        <img class="feauture-with-image__image feauture-with-image__image_left">
       </section>
-      <section>
-        <div>
-          <h1>НЕБОЛЬШАЯ ПЛОЩАДЬ</h1>
-          <p>— №3 —</p>
-          <p>ВСЕ достопримечательности находятся очень близко</p>
+      <section class="feauture-list">
+        <div class="feauture-list__b-feauture b-feauture">
+          <h1 class="b-feauture__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h1>
+          <p class="b-feauture__number">— №3 —</p>
+          <p class="b-feauture__description">ВСЕ достопримечательности находятся очень близко</p>
         </div>
-        <div>
-          <h1>КРАСИВАЯ ДОРОГА</h1>
-          <p>— №4 —</p>
-          <p>ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+        <div class="feauture-list__b-feauture b-feauture">
+          <h1 class="b-feauture__title">КРАСИВАЯ ДОРОГА</h1>
+          <p class="b-feauture__number">— №4 —</p>
+          <p class="b-feauture__description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
         </div>
-        <div>
-          <h1>МАЛО ТУРИСТОВ</h1>
-          <p>— №5 —</p>
-          <p>Большинство едет в гранд каньон и толпится там</p>
+        <div class="feauture-list__b-feauture b-feauture">
+          <h1 class="b-feauture__title">МАЛО ТУРИСТОВ</h1>
+          <p class="b-feauture__number">— №5 —</p>
+          <p class="b-feauture__description">Большинство едет в гранд каньон и толпится там</p>
         </div>
       </section>
-      <section>
-        <h1>Советы</h1>
-        <div>
-          <h2>Жилье</h2>
-          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+      <section class="advice-list">
+        <h1 class="visually-hidden">Советы</h1>
+        <div class="advice-list__b-advice b-advice">
+          <h2 class="b-advice__title">Жилье</h2>
+          <p class="b-advice__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
-        <div>
-          <h2>ЕДА</h2>
-          <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+        <div class="advice-list__b-advice b-advice">
+          <h2 class="b-advice__title">ЕДА</h2>
+          <p class="b-advice__description">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
         </div>
-        <div>
-          <h2>СУВЕНИРЫ</h2>
-          <p>Не только китайского, но и местного производства!</p>
+        <div class="advice-list__b-advice b-advice">
+          <h2 class="b-advice__title">СУВЕНИРЫ</h2>
+          <p class="b-advice__description">Не только китайского, но и местного производства!</p>
         </div>
       </section>
     </div>
 
-    <section>
-      <h1>ЗАИНТЕРЕСОВАЛИСЬ?</h1>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <a>ПОИСК ГОСТИНИЦЫ В седоне</a>
+    <section class="main-content__searching-hotels searching-hotels">
+      <h1 class="searching-hotels__title">ЗАИНТЕРЕСОВАЛИСЬ?</h1>
+      <p class="searching-hotels__tip">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <a class="searching-hotels__link button">ПОИСК ГОСТИНИЦЫ В седоне</a>
+      <form class="searching-hotels__searching-form searching-form">
+        <p class="searching-form__b-date b-date">
+          <label class="b-date__label">Дата заезда:</label>
+          <input class="b-date__field" 24 Апреля 2017>
+        </p>
+        <p class="searching-form__b-date b-date">
+          <label class="b-date__label">Дата Выезда:</label>
+          <input class="b-date__field" 4 июля 2017>
+        </p>
+        <p class="searching-form__people people">
+          <div class="people__b-amount b-amount">
+            <label class="b-amount__label">ВзрослыЕ:</label>
+            <input class="b-amount__field" 2>
+          </div>
+          <div class="people__b-amount b-amount">
+            <label class="b-amount__label">ДетИ:</label>
+            <input class="b-amount__field" 0>
+          </div>
+        </p>
+        <button type="submit" class="searching-hotels__button button">Найти</button>
+      </form>
     </section>
 
-    <section>
-      <img map>
+    <section class="main-content__map-area map-area">
+      <img class="map-area__map-image">
     </section>
 
-    <footer>
-      <p>#visitSEDONA</p>
-      <ul>
-        <li></li>
-        <li></li>
-        <li></li>
+    <footer class="main-footer">
+      <p class="main-footer__teg">#visitSEDONA</p>
+      <ul class="main-footer__b-social-list b-social-list">
+        <li class="b-social-list__item"><a href="#" class="b-social-list__link"><span class="visually-hidden">twitter</span></a></li>
+        <li class="b-social-list__item"><a href="#" class="b-social-list__link"><span class="visually-hidden">facebook</span></a></li>
+        <li class="b-social-list__item"><a href="#" class="b-social-list__link"><span class="visually-hidden">youtube</span></a></li>
       </ul>
-      <p>
+      <p class="main-footer__copyright">
         <span>WEBSITE by</span>
-        <img src="">
+        <a href="#" class="main-footer__link"><img src="" class="main-footer__image"></a>
       </p>
     </footer>
 

@@ -8,137 +8,146 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <img logo>
-      <ul>
-        <li>ИНФОРМАЦИЯ</li>
-        <li>ФОТО И ВИДЕО</li>
-        <li>КАРТА ШТАТА</li>
-        <li>ГОСТИНИЦЫ</li>
+  <header class="main-header">
+    <nav class="main-header__main-navigation">
+      <ul class="main-header__b-navigation-list b-navigation-list">
+        <li class="b-navigation-list__item"><a href="index.html" class="b-navigation-list__link"><img logo class="b-navigation-list__img-logo"></a></li>
+        <li class="b-navigation-list__item"><a href="#" class="b-navigation-list__link">ИНФОРМАЦИЯ</a></li>
+        <li class="b-navigation-list__item"><a href="#" class="b-navigation-list__link">ФОТО И ВИДЕО</a></li>
+        <li class="b-navigation-list__item"><a href="#" class="b-navigation-list__link">КАРТА ШТАТА</a></li>
+        <li class="b-navigation-list__item"><a class="b-navigation-list__link b-navigation-list__link_current">ГОСТИНИЦЫ</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section>
-      <h1>Фильтр выбора гостиниц</h1>
-      <form>
-        <div>
-          <h1>ИНФРАСТРУКТУРА:</h1>
-          <label>БАССЕЙН</label>
-          <label>ПАРКОВКА</label>
-          <label>Wi-Fi</label>
+  <main class="hotels-content container">
+
+    <section class="hotels-content__filter">
+      <h1 class="visually-hidden">Фильтр выбора гостиниц</h1>
+      <form class="hotels-content__filter-form filter-form">
+        <div class="filter-form__b-checkbox-list b-checkbox-list">
+          <h1 class="b-checkbox-list__title">ИНФРАСТРУКТУРА:</h1>
+          <label class="b-checkbox-list__item">БАССЕЙН</label>
+          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
+          <label class="b-checkbox-list__item">ПАРКОВКА</label>
+          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
+          <label class="b-checkbox-list__item">Wi-Fi</label>
+          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
         </div>
-        <div>
-          <h1>Тип жилья:</h1>
-          <label>ГостиницА</label>
-          <label>МОТЕЛЬ</label>
-          <label>АПАРТАМЕНТЫ</label>
+        <div class="filter-form__b-checkbox-list b-checkbox-list">
+          <h1 class="b-checkbox-list__title">Тип жилья:</h1>
+          <label class="b-checkbox-list__item">ГостиницА</label>
+          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
+          <label class="b-checkbox-list__item">МОТЕЛЬ</label>
+          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
+          <label class="b-checkbox-list__item">АПАРТАМЕНТЫ</label>
+          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
         </div>
-        <div>
-          <h1>Стоимость в сутки (Р):</h1>
-          <div>
-            <span>от 0</span>
+        <div class="filter-form__price-day price-day">
+          <h1 class="price-day__title">Стоимость в сутки (Р):</h1>
+          <div class="price-day__prices prices">
+            <div class="prices__floor">
+              <span>от 0</span>
+            </div>
+            <div class="prices__ceil">
+              <span>ДО 3000</span>
+            </div>
           </div>
-          <div>
-            <span>ДО 3000</span>
-          </div>
-          <div>
-            <button type="button"></button>
-            <button type="button"></button>
+          <div class="price-day__range-field">
+            <button type="button" class="range-field__button"></button>
+            <button type="button" class="range-field__button"></button>
           </div>
         </div>
-        <button type="submit">ПОКАЗАТЬ</button>
+        <button type="submit" class="filter-form__button button">ПОКАЗАТЬ</button>
       </form>
     </section>
 
-    <div>
-      <h2>Найдено: 3</h2>
-      <h3>СОРТИРОВКА:</h3>
-      <ul>
-        <li>ПО ЦЕНЕ</li>
-        <li>ПО ТИПУ</li>
-        <li>ПО РЕЙТИНГУ</li>
+    <div class="searching-head">
+      <h2 class="searching-head__result">Найдено: 3</h2>
+      <h3 class="searching-head__title">СОРТИРОВКА:</h3>
+      <ul class="searching-head__sort-list sort-list">
+        <li class="sort-list__item sort-list__item_current">ПО ЦЕНЕ</li>
+        <li class="sort-list__item">ПО ТИПУ</li>
+        <li class="sort-list__item">ПО РЕЙТИНГУ</li>
       </ul>
-      <div></div>
+      <div class="searching-head__toggle"></div>
     </div>
 
-    <section>
-      <h1>Список гостиниц</h1>
+    <section class="hotels-content__hotels hotels">
+      <h1 class="hotels__title visually-hidden">Список гостиниц</h1>
 
-      <div>
-        <img>
-        <div>
-          <h2>Amara Resort & Spa</h2>
-          <div>
-            <p>Гостиница</p>
-            <a>ПОДРОБНЕЕ</a>
+      <div class="hotels__b-hotel b-hotel">
+        <img class="b-hotel__image">
+        <div class="b-hotel__info">
+          <h2 class="b-hotel__title">Amara Resort & Spa</h2>
+          <div class="b-hotel__column">
+            <p class="b-hotel__mode">Гостиница</p>
+            <a class="b-hotel__link b-hotel__link_theme_details">ПОДРОБНЕЕ</a>
           </div>
-          <div>
-            <p>ОТ 4000 Р.</p>
-            <a>ЗАБРОНИРОВАТЬ</a>
+          <div class="b-hotel__column">
+            <p class="b-hotel__price">ОТ 4000 Р.</p>
+            <a class="b-hotel__link b-hotel__link_theme_reserved">ЗАБРОНИРОВАТЬ</a>
           </div>
         </div>
-        <div>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <div class="b-hotel__prestige">
+          <ul class="b-hotel__stars-list">
+            <li class="b-hotel__star"></li>
+            <li class="b-hotel__star"></li>
+            <li class="b-hotel__star"></li>
+            <li class="b-hotel__star"></li>
+            <li class="b-hotel__star b-hotel__star_disabled"></li>
           </ul>
-          <p>Рейтинг: 8,5</p>
+          <p class="b-hotel__rate">Рейтинг: 8,5</p>
         </div>
       </div>
 
-      <div>
-        <img>
-        <div>
-          <h2>Desert Quail Inn</h2>
-          <div>
-            <p>Мотель</p>
-            <a>ПОДРОБНЕЕ</a>
+      <div class="hotels__b-hotel b-hotel">
+        <img class="b-hotel__image">
+        <div class="b-hotel__info">
+          <h2 class="b-hotel__title">Desert Quail Inn</h2>
+          <div class="b-hotel__column">
+            <p class="b-hotel__mode">Мотель</p>
+            <a class="b-hotel__link b-hotel__link_theme_details">ПОДРОБНЕЕ</a>
           </div>
-          <div>
-            <p>ОТ 3000 Р.</p>
-            <a>ЗАБРОНИРОВАТЬ</a>
+          <div class="b-hotel__column">
+            <p class="b-hotel__price">ОТ 3000 Р.</p>
+            <a class="b-hotel__link b-hotel__link_theme_reserved">ЗАБРОНИРОВАТЬ</a>
           </div>
         </div>
-        <div>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <div class="b-hotel__prestige">
+          <ul class="b-hotel__stars-list">
+            <li class="b-hotel__star"></li>
+            <li class="b-hotel__star"></li>
+            <li class="b-hotel__star"></li>
+            <li class="b-hotel__star b-hotel__star_disabled"></li>
+            <li class="b-hotel__star b-hotel__star_disabled"></li>
           </ul>
-          <p>Рейтинг: 8,9</p>
+          <p class="b-hotel__rate">Рейтинг: 8,9</p>
         </div>
       </div>
 
-      <div>
-        <img>
-        <div>
-          <h2>Villas at Poco Diablo</h2>
-          <div>
-            <p>Апартаменты</p>
-            <a>ПОДРОБНЕЕ</a>
+      <div class="hotels__b-hotel b-hotel">
+        <img class="b-hotel__image">
+        <div class="b-hotel__info">
+          <h2 class="b-hotel__title">Villas at Poco Diablo</h2>
+          <div class="b-hotel__column">
+            <p class="b-hotel__mode">Апартаменты</p>
+            <a class="b-hotel__link b-hotel__link_theme_details">ПОДРОБНЕЕ</a>
           </div>
-          <div>
-            <p>ОТ 2000 Р.</p>
-            <a>ЗАБРОНИРОВАТЬ</a>
+          <div class="b-hotel__column">
+            <p class="b-hotel__price">ОТ 2000 Р.</p>
+            <a class="b-hotel__link b-hotel__link_theme_reserved">ЗАБРОНИРОВАТЬ</a>
           </div>
         </div>
-        <div>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+        <div class="b-hotel__prestige">
+          <ul class="b-hotel__stars-list">
+            <li class="b-hotel__star"></li>
+            <li class="b-hotel__star"></li>
+            <li class="b-hotel__star b-hotel__star_disabled"></li>
+            <li class="b-hotel__star b-hotel__star_disabled"></li>
+            <li class="b-hotel__star b-hotel__star_disabled"></li>
           </ul>
-          <p>Рейтинг: 9,2</p>
+          <p class="b-hotel__rate">Рейтинг: 9,2</p>
         </div>
       </div>
 
@@ -146,16 +155,16 @@
 
   </main>
 
-  <footer>
-    <p>#visitSEDONA</p>
-    <ul>
-      <li></li>
-      <li></li>
-      <li></li>
+  <footer class="main-footer">
+    <p class="main-footer__teg">#visitSEDONA</p>
+    <ul class="main-footer__b-social-list b-social-list">
+      <li class="b-social-list__item"><a href="#" class="b-social-list__link"><span class="visually-hidden">twitter</span></a></li>
+      <li class="b-social-list__item"><a href="#" class="b-social-list__link"><span class="visually-hidden">facebook</span></a></li>
+      <li class="b-social-list__item"><a href="#" class="b-social-list__link"><span class="visually-hidden">youtube</span></a></li>
     </ul>
-    <p>
+    <p class="main-footer__copyright">
       <span>WEBSITE by</span>
-      <img src="">
+      <a href="#" class="main-footer__link"><img src="" class="main-footer__image"></a>
     </p>
   </footer>
 
