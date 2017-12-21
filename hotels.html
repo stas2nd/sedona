@@ -27,35 +27,31 @@
       <form class="hotels-content__filter-form filter-form">
         <div class="filter-form__b-checkbox-list b-checkbox-list">
           <h1 class="b-checkbox-list__title">ИНФРАСТРУКТУРА:</h1>
-          <label class="b-checkbox-list__item">БАССЕЙН</label>
+          <label class="b-checkbox-list__item" tabindex="0">БАССЕЙН</label>
           <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
-          <label class="b-checkbox-list__item">ПАРКОВКА</label>
+          <label class="b-checkbox-list__item" tabindex="0">ПАРКОВКА</label>
           <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
-          <label class="b-checkbox-list__item">Wi-Fi</label>
+          <label class="b-checkbox-list__item" tabindex="0">Wi-Fi</label>
           <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
         </div>
         <div class="filter-form__b-checkbox-list b-checkbox-list">
           <h1 class="b-checkbox-list__title">Тип жилья:</h1>
-          <label class="b-checkbox-list__item">ГостиницА</label>
+          <label class="b-checkbox-list__item" tabindex="0">ГостиницА</label>
           <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
-          <label class="b-checkbox-list__item">МОТЕЛЬ</label>
+          <label class="b-checkbox-list__item" tabindex="0">МОТЕЛЬ</label>
           <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
-          <label class="b-checkbox-list__item">АПАРТАМЕНТЫ</label>
+          <label class="b-checkbox-list__item" tabindex="0">АПАРТАМЕНТЫ</label>
           <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
         </div>
         <div class="filter-form__price-day price-day">
           <h1 class="price-day__title">Стоимость в сутки (Р):</h1>
-          <div class="price-day__prices prices">
-            <div class="prices__floor">
-              <span>от 0</span>
-            </div>
-            <div class="prices__ceil">
-              <span>ДО 3000</span>
-            </div>
+          <div class="price-day__prices">
+              <label class="min-price">от <input class="price-day__min" type="text" name="min-price" pattern="^[ 0-9]+$" value="0"></label>
+              <label class="max-price">ДО <input class="price-day__max" type="text" name="max-price" pattern="^[ 0-9]+$" value="3000"></label>
           </div>
           <div class="price-day__range-field">
-            <button type="button" class="range-field__button"></button>
-            <button type="button" class="range-field__button"></button>
+            <button type="button" class="range-field__button range-field__button_min"></button>
+            <button type="button" class="range-field__button range-field__button_max"></button>
           </div>
         </div>
         <button type="submit" class="filter-form__button button">ПОКАЗАТЬ</button>
@@ -66,17 +62,30 @@
       <h2 class="searching-head__result">Найдено: 3</h2>
       <h3 class="searching-head__title">СОРТИРОВКА:</h3>
       <ul class="searching-head__sort-list sort-list">
-        <li class="sort-list__item sort-list__item_current">ПО ЦЕНЕ</li>
-        <li class="sort-list__item">ПО ТИПУ</li>
-        <li class="sort-list__item">ПО РЕЙТИНГУ</li>
+        <li class="sort-list__item sort-list__item_current">
+          <input class="visually-hidden searching-head__radio" type="radio" name="searching-sort-item" value="by-price" id="by-price" checked>
+          <label class="searching-head__label" for="by-price" tabindex="0">ПО ЦЕНЕ</label>
+        </li>
+        <li class="sort-list__item">
+          <input class="visually-hidden searching-head__radio" type="radio" name="searching-sort-item" value="by-type" id="by-type">
+          <label class="searching-head__label" for="by-type" tabindex="0">ПО ТИПУ</label>
+        </li>
+        <li class="sort-list__item">
+          <input class="visually-hidden searching-head__radio" type="radio" name="searching-sort-item" value="by-rate" id="by-rate">
+          <label class="searching-head__label" for="by-rate" tabindex="0">ПО РЕЙТИНГУ</label>
+        </li>
       </ul>
       <div class="searching-head__toggle">
-        <svg class="searching-head__up-image img-block" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-        <polygon fill="#231F20" points="5.5,0 0,10 11,10 "></polygon>
-        </svg>
-        <svg class="searching-head__down-image img-block" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
-        <polyline fill="#231F20" points="5.5,10 0,0 11,0 "></polyline>
-        </svg>
+        <button class="searching-head__button" type="button">
+          <svg class="searching-head__button-img searching-head__button-img_up img-block" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+          <polygon fill="#231F20" points="5.5,0 0,10 11,10 "></polygon>
+          </svg>
+        </button>
+        <button class="searching-head__button" type="button">
+          <svg class="searching-head__button-img searching-head__button-img_down searching-head__button-img_active img-block" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="11px" height="10px" viewBox="0 0 11 10" enable-background="new 0 0 11 10" xml:space="preserve">
+          <polyline fill="#231F20" points="5.5,10 0,0 11,0 "></polyline>
+          </svg>
+        </button>
       </div>
     </div>
 
@@ -89,11 +98,11 @@
           <h2 class="b-hotel__title">Amara Resort & Spa</h2>
           <div class="b-hotel__column">
             <p class="b-hotel__mode">Гостиница</p>
-            <a class="b-hotel__link b-hotel__link_theme_details">ПОДРОБНЕЕ</a>
+            <a class="b-hotel__link button">ПОДРОБНЕЕ</a>
           </div>
           <div class="b-hotel__column">
             <p class="b-hotel__price">ОТ 4000 Р.</p>
-            <a class="b-hotel__link b-hotel__link_theme_reserved">ЗАБРОНИРОВАТЬ</a>
+            <a class="b-hotel__link b-hotel__link_theme_reserved button">ЗАБРОНИРОВАТЬ</a>
           </div>
         </div>
         <div class="b-hotel__prestige">
@@ -114,11 +123,11 @@
           <h2 class="b-hotel__title">Desert Quail Inn</h2>
           <div class="b-hotel__column">
             <p class="b-hotel__mode">Мотель</p>
-            <a class="b-hotel__link b-hotel__link_theme_details">ПОДРОБНЕЕ</a>
+            <a class="b-hotel__link button">ПОДРОБНЕЕ</a>
           </div>
           <div class="b-hotel__column">
             <p class="b-hotel__price">ОТ 3000 Р.</p>
-            <a class="b-hotel__link b-hotel__link_theme_reserved">ЗАБРОНИРОВАТЬ</a>
+            <a class="b-hotel__link b-hotel__link_theme_reserved button">ЗАБРОНИРОВАТЬ</a>
           </div>
         </div>
         <div class="b-hotel__prestige">
@@ -139,11 +148,11 @@
           <h2 class="b-hotel__title">Villas at Poco Diablo</h2>
           <div class="b-hotel__column">
             <p class="b-hotel__mode">Апартаменты</p>
-            <a class="b-hotel__link b-hotel__link_theme_details">ПОДРОБНЕЕ</a>
+            <a class="b-hotel__link button">ПОДРОБНЕЕ</a>
           </div>
           <div class="b-hotel__column">
             <p class="b-hotel__price">ОТ 2000 Р.</p>
-            <a class="b-hotel__link b-hotel__link_theme_reserved">ЗАБРОНИРОВАТЬ</a>
+            <a class="b-hotel__link b-hotel__link_theme_reserved button">ЗАБРОНИРОВАТЬ</a>
           </div>
         </div>
         <div class="b-hotel__prestige">
@@ -171,7 +180,7 @@
     </ul>
     <p class="main-footer__copyright">
       <span>WEBSITE by</span>
-      <a href="#" class="main-footer__link"><svg class="main-footer__image img-block" width="115" height="41" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 39"><title>logo_name</title>
+      <a href="https://htmlacademy.ru/intensive/htmlcss" class="main-footer__link"><svg class="main-footer__image img-block" width="115" height="41" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 39"><title>logo_name</title>
         <path d="M401.93,351.51a2.07,2.07,0,0,0,.58-0.11v1.4a3.41,3.41,0,0,1-1.24.22,1.75,1.75,0,0,1-1.75-1,5.08,5.08,0,0,1-3.3,1.13c-1.59,0-3.06-.87-3.06-2.68,0-2.24,2.08-2.93,3.9-2.93a11.63,11.63,0,0,1,2.28.26v-0.31c0-1.09-.8-1.86-2.3-1.86a7.79,7.79,0,0,0-3.15.67v-1.79a10.72,10.72,0,0,1,3.35-.58c2.48,0,4,1.18,4,3.83v3.14A0.57,0.57,0,0,0,401.93,351.51Zm-6.76-1.19a1.42,1.42,0,0,0,1.64,1.29,3.56,3.56,0,0,0,2.53-1V349.1a10.21,10.21,0,0,0-1.9-.22C396.34,348.89,395.17,349.23,395.17,350.33Z" transform="translate(-355.09 -323.29)" fill="#fff"></path>
         <path d="M408.15,343.91a5.29,5.29,0,0,1,2.7.67v1.79a4.28,4.28,0,0,0-2.42-.73,2.89,2.89,0,1,0,0,5.76,5.26,5.26,0,0,0,2.55-.67v1.8a6.58,6.58,0,0,1-2.9.6,4.42,4.42,0,0,1-4.72-4.54A4.54,4.54,0,0,1,408.15,343.91Z" transform="translate(-355.09 -323.29)" fill="#fff"></path>
         <path d="M420.93,351.51a2.07,2.07,0,0,0,.58-0.11v1.4a3.41,3.41,0,0,1-1.24.22,1.75,1.75,0,0,1-1.75-1,5.08,5.08,0,0,1-3.3,1.13c-1.59,0-3.06-.87-3.06-2.68,0-2.24,2.08-2.93,3.9-2.93a11.63,11.63,0,0,1,2.28.26v-0.31c0-1.09-.8-1.86-2.3-1.86a7.79,7.79,0,0,0-3.15.67v-1.79a10.72,10.72,0,0,1,3.35-.58c2.48,0,4,1.18,4,3.83v3.14A0.57,0.57,0,0,0,420.93,351.51Zm-6.76-1.19a1.42,1.42,0,0,0,1.64,1.29,3.56,3.56,0,0,0,2.53-1V349.1a10.21,10.21,0,0,0-1.9-.22C415.33,348.89,414.17,349.23,414.17,350.33Z" transform="translate(-355.09 -323.29)" fill="#fff"></path>
