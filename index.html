@@ -12,7 +12,7 @@
   <header class="main-header">
     <nav class="main-header__main-navigation">
       <ul class="main-header__b-navigation-list b-navigation-list">
-        <li class="b-navigation-list__item"><a class="b-navigation-list__link"><img class="b-navigation-list__img-logo" src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона"></a></li>
+        <li class="b-navigation-list__item"><a class="b-navigation-list__link b-navigation-list__link_img"><img class="b-navigation-list__img-logo img-block" src="img/logo.png" width="138" height="70" alt="Логотип сайта Седона"></a></li>
         <li class="b-navigation-list__item"><a href="#" class="b-navigation-list__link">ИНФОРМАЦИЯ</a></li>
         <li class="b-navigation-list__item"><a href="#" class="b-navigation-list__link">ФОТО И ВИДЕО</a></li>
         <li class="b-navigation-list__item"><a href="#" class="b-navigation-list__link">КАРТА ШТАТА</a></li>
@@ -22,7 +22,7 @@
   </header>
 
   <main class="main-content container">
-    <img class="main-content__promo-image" src="img/index/promo.jpg" width="1200" height="564" alt="Welcome to the gorgeous SEDONA because the Grand Canyon sucks!">
+    <img class="main-content__promo-image img-block" src="img/index/promo.jpg" width="1200" height="564" alt="Welcome to the gorgeous SEDONA because the Grand Canyon sucks!">
     <h1 class="main-content__title">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h1>
 
     <div class="main-content__feautures main-feautures">
@@ -33,15 +33,15 @@
         <p class="b-feauture__number">— №1 —</p>
         <p class="b-feauture__description">СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
         </div>
-        <img class="feauture-with-image__image feauture-with-image__image_right" src="img/index/town.jpg" width="800" height="256" alt="Настоящий город">
+        <img class="feauture-with-image__image feauture-with-image__image_right img-block" src="img/index/town.jpg" width="800" height="256" alt="Настоящий город">
       </section>
       <section class="feauture-with-image">
         <div class="b-feauture b-feauture_theme_blue b-feauture_right">
-          <h1 class="b-feauture-block__title">ТАМ ЕСТЬ Мост дьявола</h1>
-          <p class="b-feauture-block__number">— №2 —</p>
-          <p class="b-feauture-block__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          <h1 class="b-feauture__title">ТАМ ЕСТЬ Мост дьявола</h1>
+          <p class="b-feauture__number">— №2 —</p>
+          <p class="b-feauture__description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
-        <img class="feauture-with-image__image feauture-with-image__image_left" src="img/index/canyon.jpg" width="800" height="256" alt="Мост дьявола">
+        <img class="feauture-with-image__image feauture-with-image__image_left img-block" src="img/index/canyon.jpg" width="800" height="256" alt="Мост дьявола">
       </section>
       <section class="feauture-list">
         <div class="feauture-list__b-feauture b-feauture">
@@ -90,22 +90,22 @@
           <label class="b-date__label">Дата Выезда:</label>
           <input class="b-date__field" 4 июля 2017>
         </p>
-        <p class="searching-form__people people">
-          <div class="people__b-amount b-amount">
+        <div class="searching-form__people people">
+          <p class="people__b-amount b-amount">
             <label class="b-amount__label">ВзрослыЕ:</label>
             <input class="b-amount__field" 2>
-          </div>
-          <div class="people__b-amount b-amount">
+          </p>
+          <p class="people__b-amount b-amount">
             <label class="b-amount__label">ДетИ:</label>
             <input class="b-amount__field" 0>
-          </div>
-        </p>
+          </p>
+        </div>
         <button type="submit" class="searching-hotels__button button">Найти</button>
       </form>
     </section>
 
     <section class="main-content__map-area map-area">
-      <img class="map-area__map-image" src="img/index/map.jpg" width="1200" height="593" alt="Карта расположения Седоны">
+      <img class="map-area__map-image img-block" src="img/index/map.jpg" width="1200" height="593" alt="Карта расположения Седоны">
     </section>
 
     <footer class="main-footer">
@@ -117,7 +117,7 @@
       </ul>
       <p class="main-footer__copyright">
         <span>WEBSITE by</span>
-        <a href="#" class="main-footer__link"><svg class="main-footer__image" width="115" height="41" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 39"><title>logo_name</title>
+        <a href="#" class="main-footer__link"><svg class="main-footer__image img-block" width="115" height="41" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 113 39"><title>logo_name</title>
           <path d="M401.93,351.51a2.07,2.07,0,0,0,.58-0.11v1.4a3.41,3.41,0,0,1-1.24.22,1.75,1.75,0,0,1-1.75-1,5.08,5.08,0,0,1-3.3,1.13c-1.59,0-3.06-.87-3.06-2.68,0-2.24,2.08-2.93,3.9-2.93a11.63,11.63,0,0,1,2.28.26v-0.31c0-1.09-.8-1.86-2.3-1.86a7.79,7.79,0,0,0-3.15.67v-1.79a10.72,10.72,0,0,1,3.35-.58c2.48,0,4,1.18,4,3.83v3.14A0.57,0.57,0,0,0,401.93,351.51Zm-6.76-1.19a1.42,1.42,0,0,0,1.64,1.29,3.56,3.56,0,0,0,2.53-1V349.1a10.21,10.21,0,0,0-1.9-.22C396.34,348.89,395.17,349.23,395.17,350.33Z" transform="translate(-355.09 -323.29)" fill="#fff"></path>
           <path d="M408.15,343.91a5.29,5.29,0,0,1,2.7.67v1.79a4.28,4.28,0,0,0-2.42-.73,2.89,2.89,0,1,0,0,5.76,5.26,5.26,0,0,0,2.55-.67v1.8a6.58,6.58,0,0,1-2.9.6,4.42,4.42,0,0,1-4.72-4.54A4.54,4.54,0,0,1,408.15,343.91Z" transform="translate(-355.09 -323.29)" fill="#fff"></path>
           <path d="M420.93,351.51a2.07,2.07,0,0,0,.58-0.11v1.4a3.41,3.41,0,0,1-1.24.22,1.75,1.75,0,0,1-1.75-1,5.08,5.08,0,0,1-3.3,1.13c-1.59,0-3.06-.87-3.06-2.68,0-2.24,2.08-2.93,3.9-2.93a11.63,11.63,0,0,1,2.28.26v-0.31c0-1.09-.8-1.86-2.3-1.86a7.79,7.79,0,0,0-3.15.67v-1.79a10.72,10.72,0,0,1,3.35-.58c2.48,0,4,1.18,4,3.83v3.14A0.57,0.57,0,0,0,420.93,351.51Zm-6.76-1.19a1.42,1.42,0,0,0,1.64,1.29,3.56,3.56,0,0,0,2.53-1V349.1a10.21,10.21,0,0,0-1.9-.22C415.33,348.89,414.17,349.23,414.17,350.33Z" transform="translate(-355.09 -323.29)" fill="#fff"></path>
