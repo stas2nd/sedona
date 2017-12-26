@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="main-header container">
     <nav class="main-header__main-navigation">
       <ul class="main-header__b-navigation-list b-navigation-list">
         <li class="b-navigation-list__item"><a href="#" class="b-navigation-list__link">ИНФОРМАЦИЯ</a></li>
@@ -81,34 +81,37 @@
       <h1 class="searching-hotels__title">ЗАИНТЕРЕСОВАЛИСЬ?</h1>
       <p class="searching-hotels__tip">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
       <a href="#" class="searching-hotels__link button">ПОИСК ГОСТИНИЦЫ В седоне</a>
-      <form class="searching-hotels__searching-form searching-form">
-        <p class="searching-form__b-date b-date">
-          <label class="b-date__label">Дата заезда:</label>
-          <input class="b-date__field field" type="date" value="24 Апреля 2017">
-        </p>
-        <p class="searching-form__b-date b-date">
-          <label class="b-date__label">Дата Выезда:</label>
-          <input class="b-date__field field" type="date" value="4 июля 2017">
-        </p>
-        <div class="searching-form__people people">
-          <p class="people__b-amount b-amount">
-            <label class="b-amount__label">ВзрослыЕ:</label>
-            <input class="b-amount__field field" value="2">
+      <div class="form-wrapper">
+        <form class="searching-hotels__searching-form searching-form">
+          <p class="searching-form__b-date b-date">
+            <label class="b-date__label" for="arrive-date">Дата заезда:</label>
+            <input class="b-date__field field" type="date" id="arrive-date" name="arrive-date" value="24 Апреля 2017">
           </p>
-          <p class="people__b-amount b-amount">
-            <label class="b-amount__label">ДетИ:</label>
-            <input class="b-amount__field field" type="text" pattern="^[ 0-9]+$" value="0">
+          <p class="searching-form__b-date b-date">
+            <label class="b-date__label" for="departure-date">Дата Выезда:</label>
+            <input class="b-date__field field" type="date" id="departure-date" name="departure-date" value="4 июля 2017">
           </p>
-        </div>
-        <button type="submit" class="searching-hotels__button button">Найти</button>
-      </form>
+          <div class="searching-form__people people">
+            <p class="people__b-amount b-amount">
+              <label class="b-amount__label" for="adults">ВзрослыЕ:</label>
+              <input class="b-amount__field field" type="text" pattern="^[ 0-9]+$" id="adults" name="adults" value="2">
+            </p>
+            <p class="people__b-amount b-amount">
+              <label class="b-amount__label" for="children">ДетИ:</label>
+              <input class="b-amount__field field" type="text" pattern="^[ 0-9]+$" id="children" name="children" value="0">
+            </p>
+          </div>
+          <button type="submit" class="searching-hotels__button button">Найти</button>
+        </form>
+      </div>
     </section>
 
     <section class="main-content__map-area map-area">
       <img class="map-area__map-image img-block" src="img/index/map.jpg" width="1200" height="593" alt="Карта расположения Седоны">
     </section>
+  </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <p class="main-footer__teg">#visitSEDONA</p>
       <ul class="main-footer__b-social-list b-social-list">
         <li class="b-social-list__item"><a href="#" class="b-social-list__link b-social-list__link_tw"><span class="visually-hidden">twitter</span></a></li>
@@ -134,6 +137,5 @@
       </p>
     </footer>
 
-  </main>
 </body>
 </html>

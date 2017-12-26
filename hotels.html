@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<header class="main-header">
+<header class="main-header container">
   <nav class="main-header__main-navigation">
     <ul class="main-header__b-navigation-list b-navigation-list">
       <li class="b-navigation-list__item"><a href="#" class="b-navigation-list__link">ИНФОРМАЦИЯ</a></li>
@@ -27,21 +27,21 @@
       <form class="hotels-content__filter-form filter-form">
         <div class="filter-form__b-checkbox-list b-checkbox-list">
           <h1 class="b-checkbox-list__title">ИНФРАСТРУКТУРА:</h1>
-          <label class="b-checkbox-list__item" tabindex="0">БАССЕЙН</label>
-          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
-          <label class="b-checkbox-list__item" tabindex="0">ПАРКОВКА</label>
-          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
-          <label class="b-checkbox-list__item" tabindex="0">Wi-Fi</label>
-          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
+          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden" id="swimming-pool" name="swimming-pool" checked>
+          <label class="b-checkbox-list__item" for="swimming-pool" tabindex="0">БАССЕЙН</label>
+          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden" id="parking" name="parking">
+          <label class="b-checkbox-list__item" for="parking" tabindex="0">ПАРКОВКА</label>
+          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden" id="wifi" name="wifi">
+          <label class="b-checkbox-list__item" for="wifi" tabindex="0">Wi-Fi</label>
         </div>
         <div class="filter-form__b-checkbox-list b-checkbox-list">
           <h1 class="b-checkbox-list__title">Тип жилья:</h1>
-          <label class="b-checkbox-list__item" tabindex="0">ГостиницА</label>
-          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
-          <label class="b-checkbox-list__item" tabindex="0">МОТЕЛЬ</label>
-          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
-          <label class="b-checkbox-list__item" tabindex="0">АПАРТАМЕНТЫ</label>
-          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden">
+          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden" id="hotel" name="hotel" checked>
+          <label class="b-checkbox-list__item" for="hotel" tabindex="0">ГостиницА</label>
+          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden" id="motel" name="motel" checked>
+          <label class="b-checkbox-list__item" for="motel" tabindex="0">МОТЕЛЬ</label>
+          <input type="checkbox" class="b-checkbox-list__checkbox visually-hidden" id="apartment" name="apartment" checked>
+          <label class="b-checkbox-list__item" for="apartment" tabindex="0">АПАРТАМЕНТЫ</label>
         </div>
         <div class="filter-form__price-day price-day">
           <h1 class="price-day__title">Стоимость в сутки (Р):</h1>
@@ -53,8 +53,8 @@
             <button type="button" class="range-field__button range-field__button_min"></button>
             <button type="button" class="range-field__button range-field__button_max"></button>
           </div>
+          <button type="submit" class="filter-form__button button">ПОКАЗАТЬ</button>
         </div>
-        <button type="submit" class="filter-form__button button">ПОКАЗАТЬ</button>
       </form>
     </section>
 
@@ -171,7 +171,7 @@
 
   </main>
 
-  <footer class="main-footer">
+  <footer class="main-footer container">
     <p class="main-footer__teg">#visitSEDONA</p>
     <ul class="main-footer__b-social-list b-social-list">
       <li class="b-social-list__item"><a href="#" class="b-social-list__link b-social-list__link_tw"><span class="visually-hidden">twitter</span></a></li>
