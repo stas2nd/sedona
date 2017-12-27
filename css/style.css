@@ -526,7 +526,7 @@ img {
   display: flex;
 
   margin: 0;
-  padding: 31px 73px;
+  padding: 27px 73px;
 
   color: white;
 
@@ -539,7 +539,7 @@ img {
   display: flex;
   flex-direction: column;
 
-  margin-right: 115px;
+  margin-right: 117px;
 
   font-size: 0;
 }
@@ -555,7 +555,7 @@ img {
 
 .b-checkbox-list__item {
   height: 24px;
-  margin-bottom: 24px;
+  margin-bottom: 22px;
   padding-left: 39px;
 
   font-size: 14px;
@@ -597,7 +597,7 @@ img {
 .price-day__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 
   font-size: 16px;
   line-height: 21px;
@@ -614,7 +614,7 @@ img {
   justify-content: center;
   align-items: center;
 
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
 
   font-size: 0;
@@ -642,7 +642,7 @@ img {
 .max-price {
   display: inline-block;
 
-  width: 90px;
+  width: 91px;
   padding-left: 65px;
 
   font-size: 14px;
@@ -738,7 +738,7 @@ img {
 .filter-form__button {
   display: block;
   margin: 0 auto;
-  padding: 6px 35px;
+  padding: 6px 33px;
 
   font-size: 14px;
   line-height: 20px;
@@ -1042,7 +1042,7 @@ img {
   min-height: 120px;
 }
 
-.width-calc {
+.width-calc3 {
   width: calc(100% / 3);
 }
 
