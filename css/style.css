@@ -47,6 +47,10 @@ img {
     box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
+.display_none {
+    display: none;
+}
+
 .main-header__main-navigation {
     padding: 0 73px;
 
@@ -577,6 +581,8 @@ img {
 
 .map-area {
     position: relative;
+
+    height: 473px;
 }
 
 .map-area__iframe {
@@ -1137,14 +1143,16 @@ img {
 /*footer-------------------------------------------------------------------------------*/
 
 .main-footer {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    z-index: 3;
 
     min-height: 120px;
 
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 .width-calc3 {
