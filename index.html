@@ -38,6 +38,7 @@
         <main class="main-content">
             <div class="main-content__image-wrapper">
                 <img class="main-content__promo-image img-block" src="img/index/promo.jpg" width="1200" height="773" alt="Welcome to the gorgeous SEDONA because the Grand Canyon sucks!">
+                <img class="main-content__mask-image img-block" src="img/index/white.png" width="1200" height="57" alt="Welcome to the gorgeous SEDONA because the Grand Canyon sucks!">
             </div>
             <h1 class="main-content__title">СЕДОНА — небольшой городок в АРИЗОНЕ, зАСЛУЖИвающий большего!</h1>
 
@@ -101,34 +102,35 @@
                 <h1 class="searching-hotels__title">ЗАИНТЕРЕСОВАЛИСЬ?</h1>
                 <p class="searching-hotels__tip">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
                 <a href="#" class="searching-hotels__link button">ПОИСК ГОСТИНИЦЫ В седоне</a>
-                <div class="form-wrapper">
-                    <form class="searching-hotels__searching-form searching-form">
-                        <p class="searching-form__b-date b-date">
-                            <label class="b-date__label" for="arrive-date">Дата заезда:</label>
-                            <input class="b-date__field field" type="date" id="arrive-date" name="arrive-date" value="2017-04-24">
-                        </p>
-                        <p class="searching-form__b-date b-date">
-                            <label class="b-date__label" for="departure-date">Дата Выезда:</label>
-                            <input class="b-date__field field" type="date" id="departure-date" name="departure-date" value="2017-07-04">
-                        </p>
-                        <div class="searching-form__people people">
-                            <div class="people__b-amount b-amount">
-                                <label class="b-amount__label" for="adults">ВзрослыЕ:</label>
-                                <div class="sign sign_minus" aria-label="уменьшить на 1" tabindex="0"></div>
-                                <input class="b-amount__field field" type="text" pattern="^[ 0-9]+$" id="adults" name="adults" value="2">
-                                <div class="sign sign_plus" aria-label="увеличить на 1" tabindex="0"></div>
-                            </div>
-                            <div class="people__b-amount b-amount">
-                                <label class="b-amount__label" for="children">ДетИ:</label>
-                                <div class="sign sign_minus" aria-label="уменьшить на 1" tabindex="0"></div>
-                                <input class="b-amount__field field" type="text" pattern="^[ 0-9]+$" id="children" name="children" value="0">
-                                <div class="sign sign_plus" aria-label="увеличить на 1" tabindex="0"></div>
-                            </div>
-                        </div>
-                        <button type="submit" class="searching-hotels__button button">Найти</button>
-                    </form>
-                </div>
             </section>
+
+          <div class="form-wrapper">
+            <form class="searching-hotels__searching-form searching-form">
+              <p class="searching-form__b-date b-date">
+                <label class="b-date__label" for="arrive-date">Дата заезда:</label>
+                <input class="b-date__field field" type="date" id="arrive-date" name="arrive-date" value="2017-04-24">
+              </p>
+              <p class="searching-form__b-date b-date">
+                <label class="b-date__label" for="departure-date">Дата Выезда:</label>
+                <input class="b-date__field field" type="date" id="departure-date" name="departure-date" value="2017-07-04">
+              </p>
+              <div class="searching-form__people people">
+                <div class="people__b-amount b-amount">
+                  <label class="b-amount__label" for="adults">ВзрослыЕ:</label>
+                  <div class="sign sign_minus" aria-label="уменьшить на 1" tabindex="0"></div>
+                  <input class="b-amount__field field" type="text" pattern="^[ 0-9]+$" id="adults" name="adults" value="2">
+                  <div class="sign sign_plus" aria-label="увеличить на 1" tabindex="0"></div>
+                </div>
+                <div class="people__b-amount b-amount">
+                  <label class="b-amount__label" for="children">ДетИ:</label>
+                  <div class="sign sign_minus" aria-label="уменьшить на 1" tabindex="0"></div>
+                  <input class="b-amount__field field" type="text" pattern="^[ 0-9]+$" id="children" name="children" value="0">
+                  <div class="sign sign_plus" aria-label="увеличить на 1" tabindex="0"></div>
+                </div>
+              </div>
+              <button type="submit" class="searching-hotels__button button">Найти</button>
+            </form>
+          </div>
 
             <section class="main-content__map-area map-area">
                 <iframe class="map-area__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d295971.68106295826!2d-111.62330229906907!3d34.95520558379665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1514455677475" width="1200" height="593" allowfullscreen></iframe>

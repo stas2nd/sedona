@@ -1,9 +1,9 @@
 ﻿var link = document.querySelector(".searching-hotels__link");
-var formwrapper = document.querySelector(".form-wrapper");
+var searchingform = document.querySelector(".searching-form");
 
-if (link && formwrapper) {
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    formwrapper.classList.toggle("display_block");
-  });
+if (link && searchingform) {
+    link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        searchingform.classList.toggle("display_flex");
+    });
 }
