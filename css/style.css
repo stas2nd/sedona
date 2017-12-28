@@ -1,13 +1,17 @@
 @font-face {
     font-family: 'ptsans';
-    src: url('../fonts/web/ptsans.woff2');
+    src:
+        url('../fonts/web/ptsans.woff2'),
+        url('../fonts/web/ptsans.woff') format('woff');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'ptsans';
-    src: url('../fonts/web/ptsansbold.woff2');
+    src:
+        url('../fonts/web/ptsansbold.woff2'),
+        url('../fonts/web/ptsansbold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 }
@@ -918,6 +922,8 @@ img {
 }
 
 .searching-head__button {
+    width: 11px;
+    height: 10px;
     padding: 0;
     margin: 0;
     margin-right: 13px;
