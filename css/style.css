@@ -809,7 +809,7 @@ img {
   flex-wrap: wrap;
   align-items: center;
 
-  min-height: 87px;
+  min-height: 86px;
   padding-left: 73px;
   padding-right: 73px;
 
@@ -831,6 +831,7 @@ img {
   margin: 0;
   padding: 0;
   margin-right: 40px;
+  padding-top: 4px;
 
   font-size: 12px;
   line-height: 18px;
@@ -843,6 +844,7 @@ img {
 
   margin: 0;
   padding: 0;
+  padding-top: 4px;
 
   list-style: none;
 }
@@ -933,8 +935,7 @@ img {
 .b-hotel {
   display: flex;
 
-  min-height: 91px;
-  padding-top: 29px;
+  padding-top: 30px;
   padding-bottom: 30px;
 
   background-color: white;
@@ -942,8 +943,6 @@ img {
 }
 
 .b-hotel:last-child {
-  padding-bottom: 29px;
-
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -964,7 +963,7 @@ img {
 .b-hotel__title {
   margin: 0;
   padding: 0;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   margin-top: -5px;
 
   font-size: 21px;
@@ -1049,6 +1048,7 @@ img {
   flex-direction: column;
   justify-content: space-between;
 
+  margin-top: -1px;
   margin-right: 73px;
   margin-left: auto;
 }
@@ -1202,13 +1202,18 @@ img {
   margin: 0;
   padding: 0;
 
+  font-size: 0;
   line-height: 26px;
   text-align: center;
   color: black;
 }
 
 .main-footer__copyright span {
-  margin-right: 5px;
+  margin-right: 8px;
+  margin-left: 3px;
+
+  font-size: 14px;
+  vertical-align: middle;
 }
 
 .main-footer__link {
