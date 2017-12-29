@@ -1416,10 +1416,35 @@ input[type="radio"].visually-hidden {
     height: 512px;
 }
 
-  .main-content__promo-image {
-    /*width: auto;*/
-    /*height: auto;*/
+  img.main-content__promo-image {
+      left: -216px;
+
+      max-width: none;
 }
+
+  .main-content__title {
+    padding-top: 56px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
