@@ -1426,12 +1426,17 @@ input[type="radio"].visually-hidden {
     padding-top: 56px;
   }
 
+  .b-feauture {
+    padding-bottom: 38px;
+  }
 
+.b-advice_house {
+  background-position: left 90px;
+}
 
-
-
-
-
+.feauture-with-image__image {
+  bottom: 0;
+}
 
 
 
