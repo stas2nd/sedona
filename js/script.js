@@ -20,7 +20,7 @@ if (people) {
             if (adults.value <= 0) {
                 adults.value = 0;
             } else {
-                adults.value = adults.value - 1;
+                adults.value--;
             }
         }
         else if (evt.target.classList.contains("sign_plus") && evt.target.classList.contains("sign_adults")) {
@@ -30,7 +30,7 @@ if (people) {
             if (children.value <= 0) {
                 children.value = 0;
             } else {
-                children.value = children.value - 1;
+                children.value--;
             }
         }
         else if (evt.target.classList.contains("sign_plus") && evt.target.classList.contains("sign_children")) {
