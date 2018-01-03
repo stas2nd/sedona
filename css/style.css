@@ -637,6 +637,7 @@ img {
 
 .map-area {
     position: relative;
+    overflow: hidden;
 
     height: 473px;
 }
@@ -1430,17 +1431,34 @@ input[type="radio"].visually-hidden {
     padding-bottom: 38px;
   }
 
-.b-advice_house {
-  background-position: left 90px;
+  .b-advice_house {
+    background-image: url("../img/index/icon-house.svg");
+    background-position: left 90px top 60px;
+  }
+
+  .b-advice_food {
+    background-image: url("../img/index/icon-burger.svg");
+    background-position: left 90px top 61px;
+  }
+
+  .b-advice_gifts {
+    background-image: url("../img/index/icon-present.svg");
+    background-position: left 98px top 56px;
+  }
+
+  .feauture-with-image__image {
+    bottom: 0;
 }
 
-.feauture-with-image__image {
-  bottom: 0;
-}
+  .map-area__iframe {
+    width: 768px;
+  }
 
+  img.map-area__map-image {
+    left: -210px;
 
-
-
+    max-width: 1200px;
+  }
 
 
 
