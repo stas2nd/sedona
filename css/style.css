@@ -1452,7 +1452,7 @@ input[type="radio"].visually-hidden {
 
   .b-advice_gifts {
     background-image: url("../img/index/icon-present.svg");
-    background-position: left 98px top 56px;
+    background-position: left 95px top 56px;
   }
 
   .feauture-with-image__image {
@@ -1475,6 +1475,47 @@ input[type="radio"].visually-hidden {
     -webkit-hyphens: auto;
     -ms-hyphens: auto;
   }
+
+  .filter-form {
+    padding: 27px 46px;
+
+    background-image: url("../img/filter-background-768.jpg");
+    background-position: left 0px top -55px;
+  }
+
+.b-checkbox-list {
+  margin-right: 98px;
+}
+
+  .b-checkbox-list:nth-last-of-type(2) {
+    margin-right: 0px;
+  }
+
+.min-price,
+.max-price {
+  width: 68px;
+  padding-left: 37px;
+}
+
+.price-day__min,
+.price-day__max {
+  width: 45px;
+}
+
+.filter-form__button {
+  margin-left: 40px;
+}
+
+.searching-head {
+  padding-left: 46px;
+  padding-right: 46px;
+}
+
+
+
+
+
+
 
 
 
