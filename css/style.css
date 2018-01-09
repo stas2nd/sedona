@@ -1497,6 +1497,10 @@ input[type="radio"].visually-hidden {
   padding-left: 37px;
 }
 
+  .max-price {
+    padding-left: 28px;
+  }
+
 .price-day__min,
 .price-day__max {
   width: 45px;
