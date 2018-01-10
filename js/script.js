@@ -1,5 +1,13 @@
-﻿var link = document.querySelector(".searching-hotels__link");
+﻿var ESC_KEYCODE = 27;
+var SPACE_KEYCODE = 32;
+var ENTER_KEYCODE = 13;
+
+var link = document.querySelector(".searching-hotels__link");
 var searchingform = document.querySelector(".searching-form");
+var filterform = document.querySelector(".filter-form");
+var sortlist = document.querySelector(".sort-list");
+
+var rangefield = document.querySelector(".price-day__range-field");
 
 var people = document.querySelector(".people");
 var signminus = document.querySelectorAll(".sign_minus");
@@ -39,4 +47,47 @@ if (people) {
     });
 }
 
+if (adults || children) {
+  document.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === SPACE_KEYCODE) {
+      if (document.activeElement.classList.contains("sign")) {
+        evt.preventDefault();
+        document.activeElement.click();
+      }
+    }
+  });
+}
 
+if (filterform) {
+  document.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === SPACE_KEYCODE) {
+      if (document.activeElement.classList.contains("b-checkbox-list__item")) {
+        evt.preventDefault();
+        document.activeElement.click();
+      }
+    }
+  });
+}
+
+if (sortlist) {
+  document.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === SPACE_KEYCODE) {
+      if (document.activeElement.classList.contains("searching-head__label")) {
+        evt.preventDefault();
+        document.activeElement.click();
+      }
+    }
+  });
+}
+
+if (rangefield) {
+  rangefield.addEventListener("click", function (evt){
+    if (evt.target.classList.contains("range-field__button")) {
+      if (adults.value <= 0) {
+        adults.value = 0;
+      } else {
+        adults.value--;
+      }
+    }
+  });
+}

@@ -65,17 +65,6 @@ img {
     transform: translateY(0);
 }
 
-.no-js .searching-form {
-    -webkit-transform: translateY(-100%);
-    -ms-transform: translateY(-100%);
-    transform: translateY(-100%);
-    -webkit-transition: -webkit-transform ease 0.6s;
-    transition: -webkit-transform ease 0.6s;
-    -o-transition: transform ease 0.6s;
-    transition: transform ease 0.6s;
-    transition: transform ease 0.6s, -webkit-transform ease 0.6s;
-}
-
 .no-js .display_flex {
     -webkit-transform: translateY(0);
     -ms-transform: translateY(0);
@@ -670,6 +659,7 @@ img {
 
 .b-amount__field {
     width: 114px;
+    margin-left: auto;
 
     text-align: center;
 }
@@ -1677,7 +1667,12 @@ input[type="radio"].visually-hidden {
         left: 71%;
     }
 
-    .filter-form__button {
+    .range-field__button_max:hover,
+    .range-field__button_max:focus {
+        left: calc(71% - 1px);
+    }
+
+  .filter-form__button {
         margin-left: 40px;
     }
 
