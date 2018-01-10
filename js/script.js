@@ -7,8 +7,6 @@ var searchingform = document.querySelector(".searching-form");
 var filterform = document.querySelector(".filter-form");
 var sortlist = document.querySelector(".sort-list");
 
-var rangefield = document.querySelector(".price-day__range-field");
-
 var people = document.querySelector(".people");
 var signminus = document.querySelectorAll(".sign_minus");
 var signplus = document.querySelectorAll(".sign_plus");
@@ -80,14 +78,3 @@ if (sortlist) {
   });
 }
 
-if (rangefield) {
-  rangefield.addEventListener("click", function (evt){
-    if (evt.target.classList.contains("range-field__button")) {
-      if (adults.value <= 0) {
-        adults.value = 0;
-      } else {
-        adults.value--;
-      }
-    }
-  });
-}
